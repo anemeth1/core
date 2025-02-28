@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fooldal</title>
+</head>
+<body>
+
+    <h1>Üdv a főoldalon</h1>
+
+    <ul> 
+        {% for szemely in szemelyek %}
+            <li>
+                {% if szemely.hazas%}
+                <span style="color:green">
+                    {{szemely.vezeteknev}} {{szemely.keresztnev}} {{szemely.eletkor}}
+                     {{szemely.letrehozva}}   <br>  {{szemely.picture}} <br>
+                </span> <br>
+                 {% else %}
+                <span style="color:red">
+                    {{szemely.vezeteknev}} {{szemely.keresztnev}} {{szemely.eletkor}}
+                     {{szemely.letrehozva}}   <br>  {{szemely.picture}} <br>
+                </span>
+                 {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
