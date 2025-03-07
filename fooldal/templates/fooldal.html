@@ -9,6 +9,8 @@
 
     <h1>Üdv a főoldalon</h1>
 
+    <input type="button" onclick="location.href={% url 'uj_szemely' %}"  value="Új személy" >
+
     <ul> 
         {% for szemely in szemelyek %}
             <li>

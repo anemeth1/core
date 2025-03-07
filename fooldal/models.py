@@ -1,6 +1,6 @@
 from django.db import models
 
-class szemely(models.Model):
+class Szemely(models.Model):
     vezeteknev = models.CharField(max_length=100)
     keresztnev = models.CharField(max_length=100)
     eletkor = models.IntegerField()

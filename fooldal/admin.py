@@ -1,4 +1,4 @@
 from django.contrib import admin
-from . models import szemely
+from . models import Szemely
 
-admin.site.register(szemely)
+admin.site.register(Szemely)
